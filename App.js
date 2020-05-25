@@ -44,7 +44,7 @@ const App = ({ navigation }) => {
             if (otherRoute.name === 'MainScreen' && showing) {
             const { data } = route.params;
 
-            return [{id:`item.${data.id}.photo`,animation: 'move',resize: 'clip',align: 'center-top'}]
+            return [`item.${data.id}.photo`,`item.${data.id}.profilePic`]
           }
           }}
         />
