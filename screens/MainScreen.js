@@ -52,6 +52,7 @@ export default function MainScreen({ navigation }) {
                                             id={`item.${item.id}.photo`}
                                         >
                                             <Image
+                                                resizeMode={"cover"}
                                                 source={{ uri: item.image }}
                                                 style={{ width: width - 90, height: height - 450, borderRadius: 14, marginRight:30 }}
                                             />
